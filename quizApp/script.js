@@ -28,6 +28,16 @@ const quizData = [
             d: "Venus"
         },
         correct: "c"
+    },
+    {
+        question: "Which room are we currently in for the workshop?",
+        answers: {
+            a: "Orange Room",
+            b: "Red Room",
+            c: "Green Room",
+            d: "White Room"
+        },
+        correct: "a"
     }
 ];
 
@@ -73,6 +83,7 @@ function showResults() {
     });
 
     const resultsContainer = document.getElementById('results');
+    resultsContainer.innerHTML = `The correct answers are Paris, Harper Lee, Mercury and the Orange Room.`;
     resultsContainer.innerHTML = `You got ${numCorrect} out of ${quizData.length} questions correct.`;
 }
 
